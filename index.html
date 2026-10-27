@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مؤسسة فريق التجديد | مقاولات عامة في جدة — بناء وترميم ومظلات</title>
+<meta name="description" content="بناء ملاحق، ترميم وتشطيب، جرافيت، ساندوتش بانل، مظلات وسواتر وهناجر في جدة. ضمان مكتوب على الأعمال واستشارة مجانية. اتصل الآن 0507057554.">
+<meta property="og:title" content="مؤسسة فريق التجديد | مقاولات عامة في جدة">
+<meta property="og:description" content="بناء ملاحق، ترميم وتشطيب، جرافيت، ساندوتش بانل، مظلات وسواتر وهناجر في جدة. ضمان مكتوب على الأعمال واستشارة مجانية.">
+<meta property="og:image" content="assets/img/grafit-60.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0B3B2E;
+  --teal:#12665A;
+  --gold:#C79A3B;
+  --gold-soft:#E7CF94;
+  --paper:#FBFBF8;
+  --mist:#E8F0EB;
+  --ink:#14221D;
+  --muted:#52615A;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.8;font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Reem Kufi",sans-serif;font-weight:600;line-height:1.35}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+
+/* Najdi triangle band */
+.najdi{
+  height:16px;background-color:var(--green);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpolygon points='0,16 8,2 16,16' fill='%23C79A3B'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;background-position:center bottom;
+}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,251,248,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e3e8e4}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{
+  width:44px;height:44px;border-radius:12px;background:var(--green);display:grid;place-items:center;
+  color:var(--gold);font-family:"Reem Kufi";font-weight:700;font-size:24px;
+}
+.brand b{font-family:"Reem Kufi";font-size:19px;display:block;line-height:1.2}
+.brand small{color:var(--muted);font-size:13px}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:500}
+nav a:hover{color:var(--teal)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 26px;border-radius:999px;font-weight:600;font-size:16px;border:2px solid transparent;
+  transition:transform .15s ease,background .15s ease;cursor:pointer;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--green)}
+.btn-gold:hover{background:#d8aa4a}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-dark{background:var(--green);color:#fff}
+.btn-dark:hover{background:var(--teal)}
+
+/* Hero */
+.hero{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:end;padding-top:72px}
+.hero-text{padding-bottom:84px}
+.hero h1{font-size:clamp(34px,5vw,56px);margin-bottom:22px}
+.hero p{color:#d6e4dc;font-size:19px;max-width:30em;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.phones{margin-top:30px;color:var(--gold-soft);font-size:15px}
+.phones a{font-weight:600;color:#fff;direction:ltr;unicode-bidi:embed}
+.arch{
+  position:relative;aspect-ratio:4/5;border-radius:999px 999px 0 0;overflow:hidden;
+  border:6px solid var(--gold);border-bottom:0;background:linear-gradient(160deg,var(--teal),#0a2a21);
+}
+.arch img{width:100%;height:100%;object-fit:cover}
+.warranty{
+  position:absolute;inset-inline-start:-18px;bottom:36px;background:var(--paper);color:var(--ink);
+  border-radius:14px;padding:14px 20px;box-shadow:0 12px 30px rgba(0,0,0,.25);max-width:210px;
+}
+.warranty b{font-family:"Reem Kufi";font-size:18px;color:var(--teal);display:block}
+.warranty span{font-size:14px;color:var(--muted);line-height:1.5;display:block}
+.hero-in{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-in.d2{animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* Trust strip */
+.trust{background:var(--mist);padding:26px 0}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust li{display:flex;align-items:center;gap:12px;font-weight:600;white-space:nowrap}
+.trust i{
+  flex:none;width:38px;height:38px;border-radius:50%;background:var(--green);color:var(--gold);
+  display:grid;place-items:center;font-style:normal;font-size:18px;
+}
+
+/* Sections */
+section{padding:88px 0}
+.head{max-width:620px;margin-bottom:44px}
+.head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+.head p{color:var(--muted)}
+
+/* Why-us stats */
+.why .head{margin-bottom:36px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{
+  background:#fff;border:1px solid #e3e8e4;border-radius:var(--radius);padding:26px 22px;
+}
+.stat b{
+  font-family:"Reem Kufi";font-size:clamp(30px,3.4vw,42px);color:var(--teal);
+  display:block;line-height:1.1;margin-bottom:6px;
+}
+.stat b em{font-style:normal;color:var(--gold);font-size:.6em}
+.stat span{color:var(--muted);font-size:15.5px;line-height:1.6;display:block}
+
+/* Services bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:16px}
+.tile{
+  position:relative;border-radius:var(--radius);overflow:hidden;color:#fff;
+  background:linear-gradient(150deg,var(--teal),var(--green));isolation:isolate;
+}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s ease}
+.tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(8,36,28,.88),rgba(8,36,28,.05) 65%)}
+.tile:hover img{transform:scale(1.05)}
+.tile div{position:absolute;inset-inline:0;bottom:0;padding:20px 22px}
+.tile h3{font-size:21px}
+.tile p{font-size:14.5px;color:#d9e6df;line-height:1.6;margin-top:2px}
+.t-big{grid-column:span 2;grid-row:span 2}
+.t-wide{grid-column:span 2}
+.t-big h3{font-size:30px}
+.t-big p{font-size:16px}
+.tile-text{background:var(--gold);color:var(--green)}
+.tile-text::after{display:none}
+.tile-text div{position:static;padding:26px;height:100%;display:flex;flex-direction:column;justify-content:center}
+.tile-text p{color:#3b3414;font-size:16px}
+
+/* Process */
+.process{background:var(--green);color:#fff}
+.process .head p{color:#c7d8cf}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.step h3{font-size:21px;margin-bottom:6px}
+.step p{color:#c7d8cf;font-size:15.5px}
+.step .num{
+  display:grid;place-items:center;width:52px;height:52px;border-radius:50%;
+  background:var(--gold);color:var(--green);font-family:"Reem Kufi";font-weight:700;font-size:24px;margin-bottom:18px;
+}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.shot{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(150deg,var(--mist),#cfe0d6)}
+.shot:nth-child(2),.shot:nth-child(5){aspect-ratio:3/4}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.shot:hover img{transform:scale(1.04)}
+
+/* Testimonials */
+.reviews ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.reviews li{
+  background:#fff;border:1px solid #e3e8e4;border-radius:var(--radius);padding:28px 26px 24px;
+  display:flex;flex-direction:column;gap:12px;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.reviews li:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,59,46,.09)}
+.reviews blockquote{
+  font-size:16.5px;line-height:1.9;color:var(--ink);flex:1;
+}
+.reviews blockquote::before{
+  content:"«";color:var(--gold);font-family:"Reem Kufi";font-weight:700;font-size:1.5em;line-height:0;
+  margin-inline-end:2px;
+}
+.reviews .stars{color:var(--gold);font-size:15px;letter-spacing:3px}
+.reviews footer{display:flex;align-items:center;gap:12px;border-top:1px dashed #e3e8e4;padding-top:16px;margin-top:auto}
+.reviews .ava{
+  flex:none;width:44px;height:44px;border-radius:50%;background:var(--green);color:var(--gold);
+  display:grid;place-items:center;font-family:"Reem Kufi";font-weight:700;font-size:20px;
+}
+.reviews footer b{font-family:"Reem Kufi";font-size:16px;color:var(--ink);display:block;line-height:1.3}
+.reviews footer small{color:var(--muted);font-size:13.5px}
+
+/* CTA */
+.cta{background:var(--mist);padding:0}
+.cta-box{
+  background:var(--green);color:#fff;border-radius:28px;padding:56px;margin:0 0 -1px;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;position:relative;overflow:hidden;
+}
+.cta-box::before{
+  content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:16px;
+  background:var(--gold);
+}
+.cta h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:10px}
+.cta p{color:#c7d8cf}
+.cta-actions{display:flex;flex-direction:column;gap:12px}
+.cta-actions .btn{width:100%}
+.cta-wrap{padding:88px 0}
+
+/* Footer */
+footer{background:var(--ink);color:#aebbb4;padding:56px 0 110px;font-size:15px;line-height:1.9}
+footer .cols{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;
+  padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:24px;
+}
+footer b{color:#fff;font-family:"Reem Kufi";font-size:19px;display:block;margin-bottom:10px}
+footer .tagline{color:#c3cec7;max-width:26em}
+footer h4{color:var(--gold-soft);font-family:"Reem Kufi";font-size:16px;margin-bottom:10px}
+footer ul{list-style:none}
+footer ul li{margin-bottom:4px}
+footer ul a:hover{color:#fff}
+footer a{direction:ltr;unicode-bidi:embed;color:#fff}
+footer .lic{display:flex;align-items:center;gap:8px;color:#c3cec7;font-size:14px}
+footer .lic i{
+  flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);
+  display:grid;place-items:center;font-style:normal;font-size:13px;
+}
+footer .row{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:14px}
+
+/* Mobile bar */
+.mbar{display:none}
+.wa-float{
+  position:fixed;inset-inline-start:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;
+  background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);
+}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+@media (max-width:960px){
+  nav ul{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:36px;padding-top:48px}
+  .hero-text{padding-bottom:0}
+  .arch{max-width:360px;margin-inline:auto;width:100%}
+  .warranty{inset-inline-start:8px}
+  .trust ul{grid-template-columns:1fr 1fr}
+  .trust li{white-space:normal}
+  .stats{grid-template-columns:1fr 1fr}
+  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .t-big{grid-column:span 2;grid-row:span 2}
+  .t-wide{grid-column:span 2}
+  .steps{grid-template-columns:1fr 1fr;gap:32px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .reviews ul{grid-template-columns:1fr}
+  .cta-box{grid-template-columns:1fr;padding:40px 28px}
+  footer .cols{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:60px 0}
+  .brand small{display:none}
+  .nav .btn{padding:10px 18px;font-size:14px}
+  .bento{grid-auto-rows:170px}
+  .tile h3{font-size:18px}
+  .t-big h3{font-size:24px}
+  .steps{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .wa-float{display:none}
+  .mbar{
+    display:grid;grid-template-columns:1fr 1fr;position:fixed;inset-inline:0;bottom:0;z-index:60;
+    background:var(--paper);border-top:1px solid #dde4df;padding:10px;gap:10px;
+  }
+  .mbar .btn{padding:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="مؤسسة فريق التجديد">
+      <span class="mark">ت</span>
+      <span><b>فريق التجديد</b><small>للتشغيل والصيانة | جدة</small></span>
+    </a>
+    <nav aria-label="القائمة الرئيسية">
+      <ul>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#process">كيف نعمل</a></li>
+        <li><a href="#works">أعمالنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold" href="tel:+966507057554">اتصل الآن</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text hero-in">
+        <h1>بناء وترميم وتشطيب في جدة<br>بإشراف مهندسين وضمان على الأعمال</h1>
+        <p>ملاحق، جرافيت، ساندوتش بانل، مظلات، سواتر وهناجر. نبدأ بالاستشارة المجانية وننتهي بتسليم نظيف في الموعد.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold wa" data-svc="خدمات المقاولات" href="#">اطلب عرض سعر</a>
+          <a class="btn btn-line" href="#works">شاهد أعمالنا</a>
+        </div>
+        <p class="phones">للتواصل: <a href="tel:+966507057554">0507057554</a> و <a href="tel:+966564514009">0564514009</a></p>
+      </div>
+      <div class="hero-in d2">
+        <div class="arch">
+          <img src="assets/img/grafit-60.jpg" alt="واجهة جرافيت منفذة في جدة" fetchpriority="high" onerror="this.remove()">
+          <div class="warranty"><b>ضمان مكتوب على الأعمال</b><span>نتابع معك بعد التسليم</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="najdi" aria-hidden="true"></div>
+  </div>
+
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li><i>✓</i>تنفيذ سريع ومتقن</li>
+        <li><i>✓</i>ضمان على الأعمال</li>
+        <li><i>✓</i>أسعار تنافسية</li>
+        <li><i>✓</i>فريق مهندسين وفنيين</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="head">
+        <h2>لماذا يختار أهل جدة فريق التجديد؟</h2>
+        <p>نؤمن أن العميل في بيتك العصير: تلتزم بموعدك، ترى السعر واضحًا من أول يوم، وتتعامل مع فريق خبير في مباني جدة وشروطها.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>15<em>+</em></b><span>سنة خبرة ميدانية في مباني جدة</span></div>
+        <div class="stat"><b>400<em>+</em></b><span>مشروع منفذ من الملحق حتى الهنجر</span></div>
+        <div class="stat"><b>25</b><span>مهندسًا وفنيًا في فريق العمل</span></div>
+        <div class="stat"><b>2<em> سنوات</em></b><span>ضمان مكتوب على أعمال الترميم والبناء</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <h2>كل ما يحتاجه مبناك تحت سقف واحد</h2>
+        <p>من الأساسات حتى الديكور، ومن الحدادة حتى الهناجر. اختر الخدمة واطلب سعرها مباشرة.</p>
+      </div>
+      <div class="bento">
+        <a class="tile t-big wa" data-svc="بناء ملاحق" href="#">
+          <img loading="lazy" src="assets/img/malahaq-5.jpg" alt="بناء ملاحق في جدة" onerror="this.remove()">
+          <div><h3>بناء ملاحق</h3><p>أضف غرفة أو مجلسًا أو دورًا علويًا لبيتك بدون هدم.</p></div>
+        </a>
+        <a class="tile t-wide wa" data-svc="ترميم وتشطيب" href="#">
+          <img loading="lazy" src="assets/img/tarmem-55.jpg" alt="ترميم وتشطيب" onerror="this.remove()">
+          <div><h3>ترميم وتشطيب</h3><p>تجديد شامل للمباني من الداخل والخارج.</p></div>
+        </a>
+        <a class="tile wa" data-svc="جرافيت واجهات" href="#">
+          <img loading="lazy" src="assets/img/grafit-60.jpg" alt="جرافيت واجهات" onerror="this.remove()">
+          <div><h3>جرافيت</h3><p>واجهات أسمنتية بتشطيب فخم.</p></div>
+        </a>
+        <a class="tile wa" data-svc="ساندوتش بانل" href="#">
+          <img loading="lazy" src="assets/img/sandwich-1.jpg" alt="ساندوتش بانل" onerror="this.remove()">
+          <div><h3>ساندوتش بانل</h3><p>غرف وأسقف بعزل ممتاز للحرارة.</p></div>
+        </a>
+        <a class="tile wa" data-svc="تركيب مظلات" href="#">
+          <img loading="lazy" src="assets/img/mazalat-1.webp" alt="تركيب مظلات" onerror="this.remove()">
+          <div><h3>مظلات</h3><p>ظل للحوش والبيت والسيارة.</p></div>
+        </a>
+        <a class="tile wa" data-svc="تركيب سواتر" href="#">
+          <img loading="lazy" src="assets/img/sawater-28.jpg" alt="تركيب سواتر" onerror="this.remove()">
+          <div><h3>سواتر</h3><p>خصوصية وأمان لمنزلك.</p></div>
+        </a>
+        <a class="tile t-wide wa" data-svc="جلسات وبرجولات" href="#">
+          <img loading="lazy" src="assets/img/pergola-3.jpg" alt="جلسات وبرجولات" onerror="this.remove()">
+          <div><h3>جلسات وبرجولات</h3><p>مساحات خارجية للجلوس بتصاميم عصرية.</p></div>
+        </a>
+        <a class="tile t-wide wa" data-svc="هناجر ومستودعات" href="#">
+          <img loading="lazy" src="assets/img/hanager-10.jpg" alt="هناجر ومستودعات" onerror="this.remove()">
+          <div><h3>هناجر ومستودعات</h3><p>حديد أو ألمنيوم، بمتانة تدوم.</p></div>
+        </a>
+        <div class="tile tile-text t-wide">
+          <div>
+            <h3>وخدمات أخرى</h3>
+            <p>ديكورات، دهانات داخلية وخارجية، إيبوكسي أرضيات، بديل الرخام والخشب، ورق جدران.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="head">
+        <h2>أربع خطوات من الاتصال إلى التسليم</h2>
+        <p>طريقة واضحة بدون مفاجآت في الموعد أو السعر.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="num" aria-hidden="true">١</span><h3>تواصل معنا</h3><p>اتصال أو واتساب، ونسمع ما تريد.</p></div>
+        <div class="step"><span class="num" aria-hidden="true">٢</span><h3>استشارة وعرض سعر</h3><p>يأتي مندوبنا ويقدّم لك سعرًا واضحًا.</p></div>
+        <div class="step"><span class="num" aria-hidden="true">٣</span><h3>تنفيذ بإشراف مهندس</h3><p>فريق متخصص ومواد بمواصفات عالية.</p></div>
+        <div class="step"><span class="num" aria-hidden="true">٤</span><h3>تسليم وضمان</h3><p>تستلم عملك في الموعد وعليه ضمان.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="head">
+        <h2>من أعمالنا في جدة</h2>
+        <p>مشاريع منفذة فعليًا، من الواجهات إلى الهناجر.</p>
+      </div>
+      <div class="gallery">
+        <div class="shot"><img loading="lazy" src="assets/img/malahaq-10.jpg" alt="ملحق منفذ" onerror="this.remove()"></div>
+        <div class="shot"><img loading="lazy" src="assets/img/grafit-7.jpg" alt="واجهة جرافيت" onerror="this.remove()"></div>
+        <div class="shot"><img loading="lazy" src="assets/img/tarmem-57.jpg" alt="ترميم وتشطيب" onerror="this.remove()"></div>
+        <div class="shot"><img loading="lazy" src="assets/img/malahaq-15.jpg" alt="بناء ملاحق" onerror="this.remove()"></div>
+        <div class="shot"><img loading="lazy" src="assets/img/grafit-15.jpg" alt="جرافيت جدة" onerror="this.remove()"></div>
+        <div class="shot"><img loading="lazy" src="assets/img/hanager-8.jpg" alt="هنجر ومستودع" onerror="this.remove()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="head">
+        <h2>آراء عملائنا في جدة</h2>
+        <p>ثقة تتراكم مشروعًا بعد مشروع.</p>
+      </div>
+      <ul>
+        <li>
+          <blockquote>بنى لي ملحق مجلس كامل خلال ثلاث أسابيع كما اتفقنا، والمشرف كان يرسل لي صور العمل يوميًا. تنفيذ نضيف وسعرهم منطقي.</blockquote>
+          <span class="stars" aria-label="تقييم خمس نجوم">★★★★★</span>
+          <footer><span class="ava" aria-hidden="true">م</span><span><b>أبو محمد</b><small>حي الشاطئ — بناء ملحق</small></span></footer>
+        </li>
+        <li>
+          <blockquote>نفذوا لي واجهة جرافيت للفيلا والبيت صار له وجه مختلف تمامًا. التزام بالموعد نادرًا ما تجده في السوق اليوم.</blockquote>
+          <span class="stars" aria-label="تقييم خمس نجوم">★★★★★</span>
+          <footer><span class="ava" aria-hidden="true">ع</span><span><b>أم عبدالله</b><small>حي الصفا — جرافيت واجهات</small></span></footer>
+        </li>
+        <li>
+          <blockquote>طلبنا مظلة للسيارات وسواتر للحوش. جاء مندوبهم نفس اليوم، وسلمونا المشروع قبل الموعد بيوم. الله يعطيهم العافية.</blockquote>
+          <span class="stars" aria-label="تقييم خمس نجوم">★★★★★</span>
+          <footer><span class="ava" aria-hidden="true">خ</span><span><b>أبو خالد</b><small>حي الثعالبة — مظلات وسواتر</small></span></footer>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta" id="contact">
+    <div class="wrap cta-wrap">
+      <div class="cta-box">
+        <div>
+          <h2>جاهز لتبدأ مشروعك؟</h2>
+          <p>أرسل لنا فكرتك على واتساب أو اتصل بنا، والاستشارة مجانية.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-gold wa" data-svc="استشارة مجانية" href="#">واتساب 0507057554</a>
+          <a class="btn btn-line" href="tel:+966564514009">اتصل 0564514009</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <b>مؤسسة فريق التجديد للتشغيل والصيانة</b>
+      <p class="tagline">مقاولات عامة وأعمال حدادة على مستوى جدة: بناء ملاحق، ترميم وتشطيب، جرافيت، ساندوتش بانل، مظلات وسواتر، جلسات وبرجولات، هناجر ومستودعات.</p>
+      <p class="lic" style="margin-top:6px"><i>✓</i>مؤسسة سعودية مرخصة — سجل تجاري ساري</p>
+    </div>
+    <div>
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><a href="tel:+966507057554">0507057554</a></li>
+        <li><a href="tel:+966564514009">0564514009</a></li>
+        <li>جدة — المملكة العربية السعودية</li>
+        <li>السبت — الخميس: 8 صباحًا حتى 9 مساءً</li>
+      </ul>
+    </div>
+    <div>
+      <h4>خدماتنا</h4>
+      <ul class="rtl-list">
+        <li><a href="#services">بناء ملاحق</a></li>
+        <li><a href="#services">ترميم وتشطيب</a></li>
+        <li><a href="#services">جرافيت وواجهات</a></li>
+        <li><a href="#services">مظلات وسواتر</a></li>
+        <li><a href="#services">هناجر ومستودعات</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap row">
+    <div>© مؤسسة فريق التجديد للتشغيل والصيانة</div>
+    <div>نخدم جميع أحياء جدة</div>
+  </div>
+</footer>
+
+</body>
+
+<div class="mbar">
+  <a class="btn btn-dark" href="tel:+966507057554">اتصل</a>
+  <a class="btn btn-gold wa" data-svc="خدمات المقاولات" href="#">واتساب</a>
+</div>
+<a class="wa-float wa" data-svc="خدمات المقاولات" href="#" aria-label="تواصل عبر واتساب">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.600L3 29l7.100-2.100c1.800 1 3.800 1.500 5.900 1.500 7 0 12.700-5.600 12.700-12.500S23 3 16 3zm0 22.800c-1.900 0-3.700-.5-5.300-1.500l-.4-.2-4.200 1.200 1.300-4-.3-.4a10 10 0 0 1-1.600-5.400C5.500 10 10.200 5.600 16 5.600s10.500 4.400 10.500 9.900-4.700 10.300-10.500 10.300zm5.800-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.500 8.500 0 0 1-4.200-3.600c-.3-.6.300-.6.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.100 3.300 5.200 4.500 1.900.8 2.700.9 3.600.7.600-.1 1.900-.8 2.200-1.600.3-.8.300-1.400.2-1.600l-.5-.3z"/></svg>
+</a>
+
+<script>
+  // Builds WhatsApp links with a prefilled message per service
+  const phone = "966507057554";
+  document.querySelectorAll("a.wa").forEach(a => {
+    const svc = a.dataset.svc || "خدمات المقاولات";
+    const msg = "السلام عليكم، أرغب بعرض سعر لخدمة: " + svc;
+    a.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+</script>
+</body>
+</html>
